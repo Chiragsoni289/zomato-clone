@@ -1,0 +1,242 @@
+@import url('https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;500;600;700;800&display=swap');
+
+.body{
+    margin:0;
+    padding:15;
+    text-decoration: none;
+}
+header{
+    width:100%;
+    height:80vh;
+    overflow:hidden;
+    position:relative;
+    object-fit:cover;
+    margin-bottom:2rem;
+}
+.header-image{
+    width:100%;
+    position: absolute;
+    top:-20vh;
+    z-index:-1;
+}
+.header-image img{
+    width:100%;
+}
+.nav{
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    color:white;
+    font-size: 1rem;
+    margin:0 40px;
+}
+.navbar{
+    list-style:none;
+    display: flex;
+    gap:1rem;
+    font-family: Poppins;
+}
+.head{
+    display:flex;
+    flex-direction: column;
+    justify-content: center;
+    margin-top:7vh;
+    align-items:center;
+}
+.logo{
+    width:20vh;
+}
+.head h3{
+    font-size: 2.1rem;
+    color:whitesmoke;
+    font-weight: 400;
+}
+.search{
+    display: flex;
+    width:55vw;
+    align-items:center;
+    border-radius: 10px;
+    background-color: white;
+    padding:5px 2px;
+}
+.search .search-item{
+    display: flex;
+    align-items:center;
+    margin-left: 10px;
+}
+.search .search-item p{
+    color:gray;
+    border-right:1px solid gray;
+    font-size:15px;
+    margin-right:10px;
+    margin:10px;
+}
+.search .search-item input{
+    outline: none;
+    border:none;
+    width:200%;
+    padding-left:10px;
+    font-size:15px;
+}
+.search .search-item:first-child{
+    color:palevioletred;
+    width:30%;
+}
+.search .search-item:last-child{
+width:70%;
+color:grey;
+}
+/* section1 */
+.section1{
+    display:flex;
+    justify-content: center;
+    align-items:center;
+}
+.section1 .section1-item{
+    position:relative;
+    width:15rem;
+    margin:3px 5px;
+    overflow:hidden;
+    border-radius:10px;
+    background:white;
+    border:1px solid rgb(243, 230, 230);
+}
+.section1 .section1-item img{
+    width:100%;
+    border:1px solid rgb(232, 226, 226);
+    border-radius:10px;
+    z-index:-1;
+}
+.section1 .section1-item .item-details{
+    position:absolute;
+    bottom:0px;
+    border:0 0 10px 10px;
+    background-color:white;
+    width:100%;
+    height:30%;
+    z-index: 2;
+}
+.section1 .section1-item .item-details p{
+    text-align:center;
+}
+/* Section2 */
+.section2{
+    width:1080px;
+    margin:0 auto;
+    margin-bottom:4rem;
+}
+.section2-heading{
+    font-size:2rem;
+    line-height: 1.1;
+    font-weight:400;
+}
+.section2 .section2-container .section2-items{
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-between;
+    
+}
+.section2 .section2-container .section2-items .section2-item{
+    width:100%;
+    max-width:26%;
+    margin-bottom:20px;
+    border-radius:10px;
+    box-shadow:0 2px 4px rgb(216, 215, 222);
+    text-align:center;
+    padding:20px;
+}
+.section2-item .item-head{
+    font-size:1.2rem;
+    color:rgb(17, 37, 37);
+    margin:0%;
+    margin-bottom:5px;
+}
+.section2-item .subhead{
+    font-weight: lighter;
+    color:grey;
+    margin:0;
+}
+.searchformfld{
+    position: relative;
+    margin: 5px 0px;
+    width:100px;
+}
+.searchformfld label{
+    position: absolute;
+    padding-left: 10px;
+    top:15px;
+    cursor: text;
+
+}
+.searchformfld input:focus + label,.searchformfld input:not(:placeholder-shown) + label{
+    opacity:1;
+    transform: scale(.9) translateY(-100%) translateX(-10px);
+    color:#000;
+}
+.searchformfld input:focus{
+    border:1px solid #000;
+    outline-color: #000;
+}
+.searchformfld{
+    padding: 15px;
+    margin:15px 0px;
+    width:50%;
+    border-radius:10px;
+    font-size:20px;
+    align-items: center;
+}
+.searchformfld input{
+    width:100%;
+    padding-left: 10px;
+    height:60px;
+    align-items: center;
+    font-size:15px;
+}
+.searchformfld label,.searchformfld input{
+    transition: all 0.2s;
+    transition-timing-function: ease;
+    transition-timing-function: cubic-bezier(0.25, 0.1, 0.25, 1);
+    opacity:0.5;
+    align-items: center;
+}
+/* Section3 */
+.section3{
+    height:620px;
+    background:rgb(251, 251, 247);
+}
+.section3-container{
+    width:1080px;
+    height:100%;
+    margin:0 auto;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+.section3-img{
+    width:40%;
+}
+.section3-img img{
+    width:400px;
+}
+.section3-links h1{
+    font-size:2.5rem;
+    font-weight:lighter;
+    margin:0;
+    margin-bottom:15px;
+    font-family: Okra, Helvetica, sans-serif;
+
+}
+.section3-links p{
+    font-size:1.2rem;
+    font-weight:lighter;
+    margin:0;
+    margin-bottom:15px;
+    margin-top:5px;
+    color:grey;
+}
+footer{
+    height: 100px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
